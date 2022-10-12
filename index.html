@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Simulator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>ARTHUR SIMULATOR</h1>
+        <h2>HOW SAD IS ARTHUR?</h2>
+        <progress id="file" value="0" max="100"> </progress>
+        <!-- dit is de klok 
+            deze code heb ik van https://codepen.io/afarrar/pen/JRaEjP  -->
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        <!-- progress bar over hoe lang is de les klaar -->
+        <h2 class="calltime" >CALL ENDS IN</h2>
+        <progress id="lesTijd" value="60" max="60"> </progress>
+    </header>
+    <main>  
+         <!-- dit is het start scherm met de app op het bureaublad-->
+        <img class="icon" src=images/camApp.png alt="app icon">
+        <img class="screen" src="images/startScreen.png" alt="image of screen">
+
+        <!-- hier komt een aanwijzing" -->
+        <h3>DOUBLE CLICK ICON TO START APP</h3>
+
+        <!-- dit is de app waar je arthur kunt bellen of weer kan afsluiten -->
+        <img class="callArthur"  src="images/callArthur.png" alt="call arthur icon">
+        <img class="exitIcon"  src="images/exitIcon.png" alt="exit icon">
+
+        <!-- Hier doen we tekst voor wanneer de les klaar is  -->
+        <h4>BEDANKT VOOR DE LESSEN <br> ARTHUR!</h4>
+
+        <!-- dit zijn de afbeeldingen voor de microfoon, camera, leave button en arthur zelf -->
+        <img class="arthur" src="images/arthurHappy.png" alt="blije Arthur">
+        <img class="mic" src="images/mic.png" alt="microphone icon">
+        <img class="cam" src="images/cam.png" alt="camera icon">
+        <img class="leave" src="images/leave.png" alt="leave button">
+
+        <!-- hier komen alle achtergronden voor de meeting -->
+        <img class="bg1" src="images/background1.png" alt="zwarte achtergrond">
+        <img class="bg2" src="images/background2.png" alt="groene achtergrond">
+        <img class="bg3" src="images/background3.png" alt="berg achtergrond">
+        <img class="bg4" src="images/background4.png" alt="html achtergrond">
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+body{
+    background-image: url('../images/bureau.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1{
+    font-size: 4em;
+    color: white;
+    text-shadow: 8px 8px black;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 1em;
+    color: white;
+    text-shadow: 1.9px 1.3px 0px black;
+    text-align: center;
+    margin-bottom: 10px;
+ 
+}
+
+h3{
+    font-size: 1em;
+    color: white;
+    text-shadow: 1.9px 1.3px 0px black;
+    text-align: center;
+    position: absolute;
+    margin-top: 130px;
+    display: none;
+}
+
+h4{
+    font-size: 2em;
+    color: white;
+    text-shadow: 1.9px 1.3px 0px black;
+    text-align: center;
+    position: absolute;
+    margin-top: 180px;
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/* Hier start je met het begin scherm en de app die het programma opent */
+
+.icon{
+    width: 70px;
+    z-index: 1;
+    margin-top: 185px;
+    position: absolute;
+}
+
+.screen{
+    width: 600px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+/* dit zijn de iconen om arthur te bellen of de app af te sluiten 
+deze staan op display non zodat die later aangezet kunnnen worden in javascript */
+
+.exitIcon{
+    display: none;
+    height: 40px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -230px;
+    margin-top: 77px;
+}
+
+
+.callArthur{
+    display: none;
+    height: 200px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 160px;
+}
+
+
+/* Dit zijn de iconen waarmee je de camera en mic uit en aan kan zetten en uit de meeting kan gaan 
+Deze zetten we uit en zetten we later in javascript aan */
+
+.cam{
+    height: 30px;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    margin-top: 82px;
+    margin-left: -155px;
+}
+
+.mic{
+    height: 34px;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    margin-top: 81px;
+    margin-left: -100px;
+}
+
+.leave{
+    height: 40px;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 160px;
+}
+
+/* dit is arthur
+Deze zetten we uit en zetten we later in javascript aan */
+
+.arthur{
+    z-index: 1;
+    height: 200px;
+    position: absolute;
+    margin-top: 185px;
+    display: none;
+}
+
+
+/* achtergronden van de meeting call */
+.bg1{
+    width: 600px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+
+.bg2{
+    width: 600px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+
+.bg3{
+    width: 600px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+
+.bg4{
+    width: 600px;
+    margin-top: 50px;
+    position: absolute;
+    display: none;
+}
+
+
+/* code van https://codepen.io/afarrar/pen/JRaEjP */
+.clock {
+    position: absolute;
+    left: 115px;
+    transform: translateX(-50%) translateY(-50%);
+    color: #000000;
+    font-size: 15px;
+    letter-spacing: 5px;
+    background-color: white;
+    border: solid black 2px;
+    top: 40px; 
+}
+
+#lesTijd{
+    position: absolute;
+    left: 37px;
+    top: 80px;
+}
+
+#file {
+    display: flex;
+    margin: auto;
+    margin-bottom: -30px; 
+}
+
+.calltime{
+    position: absolute;
+    left: 54px;
+    top: 42px;
+}
